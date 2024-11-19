@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import messagebox
 import math
 
+
 # Fonction pour calculer les volumes nécessaires
 def calculer():
     try:
@@ -35,18 +36,25 @@ def calculer():
         messagebox.showinfo("Résultats du Calcul", result_message)
 
     except ValueError:
-        messagebox.showerror("Erreur", "Veuillez entrer des valeurs numériques valides.")
+        messagebox.showerror(
+            "Erreur", "Veuillez entrer des valeurs numériques valides."
+        )
+
 
 # Création de la fenêtre principale
 root = tk.Tk()
 root.title("Calculateur de E-Liquide")
 
 # Labels et champs de saisie
-tk.Label(root, text="Concentration de nicotine finale souhaitée (mg/mL) :").grid(row=0, column=0, padx=10, pady=5)
+tk.Label(root, text="Concentration de nicotine finale souhaitée (mg/mL) :").grid(
+    row=0, column=0, padx=10, pady=5
+)
 entry_C_final = tk.Entry(root)
 entry_C_final.grid(row=0, column=1, padx=10, pady=5)
 
-tk.Label(root, text="Volume total du e-liquide final (mL) :").grid(row=1, column=0, padx=10, pady=5)
+tk.Label(root, text="Volume total du e-liquide final (mL) :").grid(
+    row=1, column=0, padx=10, pady=5
+)
 entry_V_total = tk.Entry(root)
 entry_V_total.grid(row=1, column=1, padx=10, pady=5)
 
@@ -55,7 +63,9 @@ entry_pourcentage_arome = tk.Entry(root)
 entry_pourcentage_arome.grid(row=2, column=1, padx=10, pady=5)
 
 # Choix de la concentration de nicotine (10 ou 20 mg/mL)
-tk.Label(root, text="Choisissez la concentration de la base de nicotine :").grid(row=3, column=0, columnspan=2, padx=10, pady=5)
+tk.Label(root, text="Choisissez la concentration de la base de nicotine :").grid(
+    row=3, column=0, columnspan=2, padx=10, pady=5
+)
 
 nicotine_var = tk.IntVar(value=20)  # Valeur par défaut de 20 mg/mL
 radio_10 = tk.Radiobutton(root, text="10 mg/mL", variable=nicotine_var, value=10)
