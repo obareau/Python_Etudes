@@ -1,90 +1,105 @@
-# E-Liquid Calculator / Calculateur de E-Liquides
 
-## English Version
+# E-Liquid Calculator
 
-### Description
+A comprehensive and customizable e-liquid calculator with an advanced graphical interface. This tool is designed for DIY e-liquid creators, offering precise calculations, recipe management, stock tracking, and personalized labeling.
 
-This is a graphical e-liquid calculator written in Python using the `tkinter` library. It allows users to easily calculate the necessary volumes of nicotine, flavor, and base (PG/VG) to create their desired e-liquid mix. The user can choose between different nicotine concentrations and input their desired final concentration, total volume, and percentage of flavoring.
+---
 
-### Features
-- Graphical interface using `tkinter`
-- Easy input for desired nicotine strength, total volume, and flavor percentage
-- Automatic calculation of:
-  - Nicotine volume needed
-  - Number of nicotine bottles required (10 mL each)
-  - Volume of flavoring
-  - Volume of base (PG/VG) needed
-- Supports nicotine base concentrations of 10 mg/mL or 20 mg/mL
+## Features
 
-### Requirements
-- Python 3
-- `tkinter` library (included in the standard Python distribution)
+### 🛠 Core Functionalities
+- **PG/VG Ratio Adjustment**: Set your desired propylene glycol (PG) and vegetable glycerin (VG) proportions.
+- **Nicotine Strength**: Calculate based on base nicotine strength and booster preferences.
+- **Flavor Management**: Add multiple flavors with custom proportions, types, and steep times.
 
-### Installation and Usage
-1. Clone this repository to your local machine:
-   ```sh
-   git clone https://github.com/yourusername/e-liquid-calculator.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd e-liquid-calculator
-   ```
-3. Make the script executable:
-   ```sh
-   chmod +x calculateur_elquide.py
-   ```
-4. Run the script:
-   ```sh
-   ./calculateur_elquide.py
-   ```
+### 📊 Advanced Features
+- **Graphical Analysis**: View proportions in interactive graphs (e.g., bar charts, pie charts).
+- **Stock Management**: Track base, booster, and flavor stocks with low-stock alerts.
+- **Recipe Comparison**: Compare multiple recipes side by side.
 
-### Screenshot
-Add a screenshot of the graphical user interface here if desired.
+### 🏷 Personalized Labels
+- Generate printable labels including:
+  - QR Code linking to full recipe details.
+  - Recipe creation date.
+  - Steep time recommendations.
 
-### License
-This project is licensed under the MIT License.
+### 🌟 Additional Functionalities
+- **Mode Selection**: Choose between beginner (simplified) and advanced (detailed) modes.
+- **Favorites & History**: Manage recipe history and mark frequently used recipes as favorites.
+- **Steep Time Tracker**: Get notifications for when your e-liquid is ready.
 
-## Version Française
+---
 
-### Description
+## Installation
 
-Ceci est un calculateur de e-liquides avec interface graphique, écrit en Python en utilisant la bibliothèque `tkinter`. Il permet aux utilisateurs de calculer facilement les volumes nécessaires de nicotine, d'arôme et de base (PG/VG) pour créer leur mélange de e-liquide souhaité. L'utilisateur peut choisir entre différentes concentrations de nicotine et entrer la concentration finale, le volume total et le pourcentage d'arôme désirés.
+### Prerequisites
+- Python 3.8 or later
+- Required libraries (install using `requirements.txt`)
 
-### Fonctionnalités
-- Interface graphique utilisant `tkinter`
-- Entrée facile de la force de nicotine souhaitée, du volume total et du pourcentage d'arôme
-- Calcul automatique de :
-  - Volume de nicotine nécessaire
-  - Nombre de flacons de nicotine requis (10 mL chacun)
-  - Volume d'arôme
-  - Volume de base (PG/VG) nécessaire
-- Prend en charge des concentrations de base de nicotine de 10 mg/mL ou 20 mg/mL
-
-### Prérequis
-- Python 3
-- Bibliothèque `tkinter` (incluse dans la distribution standard de Python)
-
-### Installation et Utilisation
-1. Clonez ce dépôt sur votre machine locale :
-   ```sh
-   git clone https://github.com/votreutilisateur/calculateur-e-liquides.git
-   ```
-2. Accédez au répertoire du projet :
-   ```sh
-   cd calculateur-e-liquides
-   ```
-3. Rendez le script exécutable :
-   ```sh
-   chmod +x calculateur_elquide.py
-   ```
-4. Exécutez le script :
-   ```sh
-   ./calculateur_elquide.py
+### Steps
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/eliquid-calculator.git
+   cd eliquid-calculator
    ```
 
-### Capture d'écran
-Ajoutez une capture d'écran de l'interface graphique ici si désiré.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### Licence
-Ce projet est sous licence MIT.
+3. Run the application:
+   ```bash
+   python main.py
+   ```
 
+---
+
+## Usage
+
+1. **Choose Base & Booster**:
+   - Specify the PG/VG ratio and nicotine strength for your base and booster.
+   - Select the desired total volume.
+
+2. **Add Flavors**:
+   - Specify flavor name, type, proportions, and brand.
+
+3. **Calculate & Save**:
+   - View results and save recipes to JSON format for later use.
+
+4. **Generate Labels**:
+   - Create a printable label with QR Code and recipe details.
+
+---
+
+## Technologies Used
+- **Python**: Core programming language.
+- **Tkinter**: GUI framework for the interface.
+- **Matplotlib**: Visualization library for graphs.
+- **qrcode**: Library for generating QR codes.
+- **Pillow**: Image processing for QR code generation.
+
+---
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests. All contributions are welcome!
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## Screenshots
+
+### Main Interface
+![Main Interface](images/main_interface.png)
+
+### Recipe Comparison
+![Recipe Comparison](images/recipe_comparison.png)
+
+### Printable Label
+![Label](images/printable_label.png)
